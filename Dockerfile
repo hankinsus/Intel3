@@ -11,7 +11,7 @@ RUN chmod 600 $HOME/.vnc/passwd
 RUN chmod 755 $HOME/.vnc/xstartup
 RUN echo 'whoami ' >>/AInetsec.sh
 RUN echo 'cd ' >>/AInetsec.sh
-RUN echo "su -l -c 'vncserver :2000 -geometry 1360x768' "  >>/AInetsec.sh
+RUN echo "su -l -c 'vncserver :2000 -geometry 2560x1440' "  >>/AInetsec.sh
 RUN echo 'cd /noVNC-1.2.0' >>/AInetsec.sh
 RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 8900 ' >>/AInetsec.sh
 RUN chmod 755 /AInetsec.sh
