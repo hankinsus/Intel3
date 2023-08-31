@@ -13,7 +13,7 @@ RUN echo 'whoami ' >>/AInetsec.sh
 RUN echo 'cd ' >>/AInetsec.sh
 RUN echo "su -l -c 'vncserver :2000 -geometry 1360x768' "  >>/AInetsec.sh
 RUN echo 'cd /noVNC-1.2.0' >>/AInetsec.sh
-RUN echo './utils/launch.sh  --vnc localhost:17900 --listen 18900 ' >>/AInetsec.sh
+RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 8900 ' >>/AInetsec.sh
 RUN chmod 755 /AInetsec.sh
-EXPOSE 18900
+EXPOSE 8900
 CMD  /AInetsec.sh
